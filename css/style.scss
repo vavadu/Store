@@ -1,0 +1,214 @@
+$font: 'Roboto', sans-serif;
+@mixin flexible-list(){
+    display: flex;
+    justify-content: space-between;
+}
+@mixin flexible-item {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@mixin circle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+* {
+    font-family: $font;
+}
+.page {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1175px;
+    margin: 0 auto
+}
+.section {
+    margin-bottom: 80px;
+}
+.section--gray {
+    background-color: #E4E5EA;
+    border-radius: 12px;
+    padding: 28px;
+}
+/* --------------------- */
+.section__header{
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 35px;
+}
+.section__title{
+    text-transform: uppercase;
+    padding-right: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+.title-line {
+    height: 2px;
+    border: 0;
+    background-color: #EDEEF2;
+}
+.title-line--gray {
+    background-color: #FFFF;
+    margin-right: -28px;
+}
+.section__title--gray {
+    background-color: #E4E5EA;
+}
+.section__title-brands{
+    padding-left: 25px;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: #fff;
+    color: #4B76AD;
+}
+/* ---------Goods------------ */
+.goods__list {
+    @include flexible-list();
+}
+.goods__item {
+    @include flexible-item();
+    max-width: 255px;
+    a {
+        color:#4B76AD;
+        font-weight: 700;
+
+    }
+}
+.goods__img {
+    height: 182px;
+    margin-bottom: 27px;
+}
+/* ---------Brands------------ */
+.brands__list {
+    @include flexible-list();
+    .brand__item {
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
+/* ----------Fortes----------- */
+.fortes__list {
+    @include flexible-list();
+}
+.forte__item {
+    @include flexible-item();
+    max-width: 210px;
+}
+.forte__icon {
+    @include circle-icon();
+    background: #FFFFFF;
+    width: 105px;
+    height: 105px;
+    margin-bottom: 16px;
+}
+.forte__text {
+    font-weight: 700;
+    text-align: center;
+}
+/* ----------Reasons----------- */
+.reasons__list {
+    @include flexible-list();
+    .reason--negative {
+        border: 3px solid #F7C7C7;
+    }
+    .reason--positive {
+        border: 3px solid #A4D6B0;
+    }
+    .header {
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        padding: 24px 29px 17px 75px;
+    }
+    .header--negative {
+        background-color: #CA0B13;
+    }
+    .header--positive {
+        background-color: #16A332;
+    }
+}
+.reason__item {
+    max-width: 545px;
+    flex: 1 1 0;
+    border-radius: 12px;
+    .header {
+        position: relative;
+        border-radius: 10px 10px 0 0;
+        padding: 24px 29px 17px 75px;
+    }
+    .header--negative {
+        background-color: #CA0B13;
+    }
+    .header--positive {
+        background-color: #16A332;
+    }
+    .reason__icon{
+        font-size: 35px;
+        color: #FFFFFF;
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.reason__title {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.reason__points {
+    margin: 25px;
+    text-align: justify;
+    span {
+        font-weight: 700;
+    }
+    li {
+        margin-bottom: 12px;
+    }
+}
+/* ----------Statistic----------- */
+.statistic__list {
+    @include flexible-list();
+}
+.statistic__item {
+    @include flexible-item();
+    max-width: 210px;
+    .text__middle {
+        font-size: 54px;
+    }
+    .text__small {
+        font-size: 32px;
+        line-height: 30px;
+    }
+    .text__orange {
+        color: #FE5815;
+    }
+}
+.statistic__number {
+    @include circle-icon();
+    color: #374A59;
+    font-weight: 700;
+    font-size: 81px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #DFE2EB;
+    width: 135px;
+    height: 135px;
+    margin-bottom: 16px;
+  
+}
+.statistic__text {
+    font-weight: 700;
+    text-align: center;
+}

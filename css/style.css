@@ -1,0 +1,243 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 80px;
+}
+
+.section--gray {
+  background-color: #E4E5EA;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+/* --------------------- */
+.section__header {
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+
+.section__title {
+  text-transform: uppercase;
+  padding-right: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.title-line {
+  height: 2px;
+  border: 0;
+  background-color: #EDEEF2;
+}
+
+.title-line--gray {
+  background-color: #FFFF;
+  margin-right: -28px;
+}
+
+.section__title--gray {
+  background-color: #E4E5EA;
+}
+
+.section__title-brands {
+  padding-left: 25px;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background: #fff;
+  color: #4B76AD;
+}
+
+/* ---------Goods------------ */
+.goods__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods__item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 255px;
+}
+.goods__item a {
+  color: #4B76AD;
+  font-weight: 700;
+}
+
+.goods__img {
+  height: 182px;
+  margin-bottom: 27px;
+}
+
+/* ---------Brands------------ */
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+}
+.brands__list .brand__item {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* ----------Fortes----------- */
+.fortes__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forte__item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 210px;
+}
+
+.forte__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #FFFFFF;
+  width: 105px;
+  height: 105px;
+  margin-bottom: 16px;
+}
+
+.forte__text {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ----------Reasons----------- */
+.reasons__list {
+  display: flex;
+  justify-content: space-between;
+}
+.reasons__list .reason--negative {
+  border: 3px solid #F7C7C7;
+}
+.reasons__list .reason--positive {
+  border: 3px solid #A4D6B0;
+}
+.reasons__list .header {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  padding: 24px 29px 17px 75px;
+}
+.reasons__list .header--negative {
+  background-color: #CA0B13;
+}
+.reasons__list .header--positive {
+  background-color: #16A332;
+}
+
+.reason__item {
+  max-width: 545px;
+  flex: 1 1 0;
+  border-radius: 12px;
+}
+.reason__item .header {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+  padding: 24px 29px 17px 75px;
+}
+.reason__item .header--negative {
+  background-color: #CA0B13;
+}
+.reason__item .header--positive {
+  background-color: #16A332;
+}
+.reason__item .reason__icon {
+  font-size: 35px;
+  color: #FFFFFF;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.reason__title {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.reason__points {
+  margin: 25px;
+  text-align: justify;
+}
+.reason__points span {
+  font-weight: 700;
+}
+.reason__points li {
+  margin-bottom: 12px;
+}
+
+/* ----------Statistic----------- */
+.statistic__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistic__item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 210px;
+}
+.statistic__item .text__middle {
+  font-size: 54px;
+}
+.statistic__item .text__small {
+  font-size: 32px;
+  line-height: 30px;
+}
+.statistic__item .text__orange {
+  color: #FE5815;
+}
+
+.statistic__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #374A59;
+  font-weight: 700;
+  font-size: 81px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 2px solid #DFE2EB;
+  width: 135px;
+  height: 135px;
+  margin-bottom: 16px;
+}
+
+.statistic__text {
+  font-weight: 700;
+  text-align: center;
+}
